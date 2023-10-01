@@ -40,7 +40,6 @@ players = [drawx, drawo]
 
 def tap(x, y):
     """Draw X or O in tapped square."""
-    if()
     x = floor(x)
     y = floor(y)
     player = state['player']
@@ -50,9 +49,9 @@ def tap(x, y):
     state['player'] = not player
 
 
-setup(420, 420, 370, 0)
+setup(420, 420, 420, 420)
 hideturtle()
-tracer(False)
+tracer(True)
 grid()
 update()
 onscreenclick(tap)
